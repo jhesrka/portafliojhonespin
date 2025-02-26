@@ -1,0 +1,108 @@
+/* Estilos generales */
+.projects {
+  width: 80%;
+  margin: 5% auto;
+  text-align: center;
+}
+
+.projects__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Contenedor de proyectos */
+.projects__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Cada proyecto */
+.projects__project {
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: inset 0 0 30px rgba(143, 155, 196, 0.325);
+  
+}
+
+/* Estructura interna de cada proyecto */
+.projects__inner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.projects__image {
+  width: 50%;
+}
+/* Imagen del proyecto */
+.projects__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Información del proyecto */
+.projects__info {
+  flex: 1;
+  text-align: center;
+}
+
+.projects__name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.projects__description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Botones */
+.projects__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.projects__button {
+  padding: 10px 20px;
+  background: linear-gradient(
+    180deg,
+    rgb(2, 0, 36) 0%,
+    rgb(3, 3, 79) 65%,
+    rgba(3, 88, 105, 0.7008053221288515) 100%
+  );
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5);
+  color: white;
+  border-radius: 15px;
+}
+
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .projects__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projects__image{
+    width: 100%;
+  }
+  .projects__image img {
+    width: 100%;
+  }
+
+  .projects__info {
+    text-align: center;
+  }
+
+  .projects__buttons {
+    justify-content: center;
+  }
+}

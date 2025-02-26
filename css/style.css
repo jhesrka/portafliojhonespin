@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;600;700;800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+@import url('menu.css');
+@import url('hero.css');
+@import url('gallery-section.css');
+@import url('backend-skills-section.css');
+@import url('habilidadesblandas.css');
+@import url('portafolio.css');
+@import url('img3d.css');
+
+
+*{
+  font-family: "Fira Sans", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}

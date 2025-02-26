@@ -1,0 +1,86 @@
+  
+  .navbar {
+    background-color: #01092dc2;
+    padding: 0.5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Logo a la izquierda y menú a la derecha */
+    align-items: center;
+    gap:5% ;
+
+  }
+  .logo_img{
+    width: 150px;
+    height: 60px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-item {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: #f39c12;
+  }
+  
+  .nav-item.active {
+    color: #f39c12;
+    font-weight: bold;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #01092deb;
+      position: absolute;
+      padding: 10px 0;
+      top: 70px;
+      left: 0;
+      z-index: 500;
+    }
+  
+    .nav-links.active {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .nav-item {
+      text-align: justify;
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .menu-icon {
+      display: block;
+      margin-right: 20px;
+    }
+  }
+  
