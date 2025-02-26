@@ -9,6 +9,8 @@ export function img3d() {
       dagress += 45;
       box.style.transform = `perspective(1000px) rotateY(${dagress}deg)`;
     });
+    console.log("No ejecutado prev");
+    
   
     next.addEventListener("click", function () {
       dagress -= 45;
