@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="author" content="Jhon Henrry Espin Sánchez" />
+    <meta
+      name="description"
+      content="Portafolio de Jhon Henrry Espin Sánchez, desarrollador Full Stack. Descubre mis proyectos y habilidades en desarrollo web."
+    />
+    <meta
+      name="keywords"
+      content="Desarrollador Full Stack, Desarrollo Web, React, Node.js, JavaScript, Portafolio, Programación"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (para redes sociales) -->
+    <meta
+      property="og:title"
+      content="Portafolio de Jhon Henrry Espin Sánchez"
+    />
+    <meta
+      property="og:description"
+      content="Descubre mis proyectos como desarrollador Full Stack."
+    />
+    <meta property="og:image" content="/img/me_2.png" />
+    <meta property="og:url" content="https://jhesrka.netlify.app" />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/img/favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "ahM9uj5Uo1Xkq_PI8",
+        });
+      })();
+    </script>
   </head>
   <body>
     <header>
@@ -324,6 +359,94 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacto" class="contact section">
+      <div class="contact__container">
+        <div class="contact__info">
+          <h3 class="contact__info-title">Información de contacto</h3>
+          <p class="contact__info-description">
+            Ofrecemos múltiples formas de contacto para atender tus consultas de
+            manera eficiente. Completa el formulario o contáctanos directamente.
+          </p>
+
+          <address class="contact__info-data">
+            <div class="contact__info-item">
+              <a
+                target="_blank"
+                class="icons-a"
+                href="https://wa.me/message/EORYL5AW72YON1 "
+                ><img class="icons-img" src="img/Whatsapp.png" alt="Whatsapp"
+              /></a>
+              <a
+                target="_blank"
+                class="icons-a"
+                href="mailto:jhesrka@hotmail.com"
+                ><img class="icons-img" src="img/email.png" alt="Email"
+              /></a>
+            </div>
+            <div class="contact__info-item">
+              <span class="contact__info-map"> Quito, Ecuador. </span>
+            </div>
+          </address>
+        </div>
+
+        <div class="contact__form">
+          <h3 class="contact__form-title">Enviar mensaje</h3>
+
+          <form id="form" class="contact__form-container">
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label"
+                >Nombre/Empresa</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="contact__form-input"
+              />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">Correo</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="contact__form-input"
+              />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__form-label">Asunto</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="contact__form-input"
+              />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                cols="30"
+                rows="5"
+                class="contact__form-input"
+              ></textarea>
+            </div>
+            <dialog id="modal">
+              Formulario enviado con éxito!
+              <button type="reset" id="btn_close-modal">Cerrar</button>
+            </dialog>
+
+            <button type="submit" class="btn contact__form-button">
+              ENVIAR
+            </button>
+          </form>
         </div>
       </div>
     </section>

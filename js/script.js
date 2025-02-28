@@ -4,6 +4,7 @@ import { updateActiveSection1 } from './updateActiveSection1.js';
 import { refreshBackendGallery } from './refreshBackendGallery.js';
 import { startCarousel } from './startCarousel.js';
 import { img3d } from './img3d.js';
+import sendEmail from './send_form.js';
 
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM completamente cargado");
@@ -13,4 +14,5 @@ document.addEventListener("DOMContentLoaded", function () {
   updateActiveSection1();
   startCarousel(document.querySelector(".carousel")); // 👈 Activa el carrusel
   img3d();
+  sendEmail();
 });
